@@ -1,0 +1,323 @@
+@charset "UTF-8";
+@use "../../foundation/variables" as var;
+
+
+.p-packplan {
+    margin-top: 80px;
+    @include var.breakpoint(tablet) {
+        margin-top: 100px;
+    }
+    
+    .content-area {
+        width: 100%;
+        min-width: 340px;
+        background-image: url(../../../images/bg-red-dott.jpg);
+        background-size: cover;
+
+        .packplan-content {
+            width: 94%;
+            max-width: 400px;
+            margin: 24px auto 0 auto;
+            @include var.breakpoint(tablet) {
+                width: 80%;
+                min-width: 660px;
+                margin-top: 40px;
+            }
+            @include var.breakpoint(pc) {
+                width: 68%;
+                max-width: 1000px;
+            }
+
+            .title {
+                width: 100%;
+                height: 60px;
+                border-radius: 20px 20px 0 0 ;
+                background-color: var.$green;
+                font-size: 2rem;
+                color: white;
+                text-align: center;
+                padding: 0 6px;
+                @include var.breakpoint(tablet) {
+                    height: 80px;
+                    line-height: 80px;
+                    font-size: 2.6rem;
+                    font-weight: 700;
+                }
+                @include var.breakpoint(pc) {
+                    font-size: 3.2rem;
+                }
+            }
+
+            .detail {
+                width: 100%;
+                background-color: #fff;
+                border: 2px solid var.$green;
+                border-radius: 0 0 20px 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+                padding-bottom: 24px;
+                @include var.breakpoint(tablet) {
+                    gap: 24px;
+                }
+
+                .plan-item__container {
+                    width: 100%;
+                    min-width: 320px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 14px;
+                    margin-top: 16px;
+                    @include var.breakpoint(tablet) {
+                        width: 648px;
+                        gap: 18px 24px;
+                        margin-top: 32px;
+                    }
+                }
+
+                .label {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 4px;
+                    @include var.breakpoint(tablet) {
+                        flex-direction: row;
+                        gap: 20px;
+                    }
+                    img {
+                        width: 46px;
+                        @include var.breakpoint(tablet) {
+                            width: 64px;
+                        }
+                    }
+                    p {
+                        font-family: "M PLUS Rounded 1c", serif;
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        color: var.$red;
+                        @include var.breakpoint(tablet) {
+                            font-size: 2.4rem;
+                        }
+                    }
+                }
+            }
+        }
+            
+        .note {
+            max-width: 400px;
+            padding: 0 4%;
+            text-align: center;
+            margin: 8px auto 0 auto;
+            @include var.breakpoint(tablet) {
+                max-width: 80%;
+            }
+        }
+
+        .packplan__list {
+            width: 100%;
+            margin-top: 24px;
+            @include var.breakpoint(tablet) {
+                margin-top: 56px;
+            }
+
+            .packplan-card__container {
+                width: 94%;
+                max-width: 400px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 16px;
+                margin: 0 auto;
+                @include var.breakpoint(tablet) {
+                    width: 77%;
+                    max-width: 1200px;
+                    grid-template-columns: repeat( 2, 1fr);
+                    grid-template-rows: repeat( 3, 1fr);
+                    gap: 30px;
+                }
+                @include var.breakpoint(pc) {
+                    grid-template-columns: repeat( 3, 1fr);
+                    grid-template-rows: repeat( 2, 1fr);
+                }
+
+                .packplan-card {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .packplan__custom {
+            border-top: 8px dotted var.$green;
+            border-bottom: 8px dotted var.$green;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            margin-top: 40px;
+            @include var.breakpoint(tablet) {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+
+            .packplan__custom__head {
+                width: 94%;
+                max-width: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                margin: 0 auto;
+                @include var.breakpoint(tablet) {
+                    max-width: none;
+                    gap: 56px;
+                }
+
+                .label {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 4px;
+                    flex-shrink: 0;
+                    img {
+                        width: 46px;
+                        @include var.breakpoint(tablet) {
+                            width: 84px;
+                        }
+                    }
+                    p {
+                        font-family: "M PLUS Rounded 1c", serif;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        color: var.$red;
+                        line-height: 30px;
+                        padding: 0 5px;
+                        background-color: #fff;
+                        border-radius: 20px;
+                        border: 1px solid var.$yellow;
+                        @include var.breakpoint(tablet) {
+                            font-size: 2.4rem;
+                            line-height: 45px;
+                            padding: 0 20px;
+                        }
+                    }
+                }
+                .text {
+                    font-size: 1.8rem;
+                    @include var.breakpoint(tablet) {
+                        font-size: 2.8rem;
+                    }
+                }
+            }
+
+            .packplan__custom__list {
+                margin-top: 18px;
+
+                .packplan__custom__container {
+                    width: 94%;
+                    max-width: 400px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 16px;
+                    justify-content: center;
+                    margin: 0 auto;
+                    @include var.breakpoint(tablet) {
+                        min-width: 768px;
+                        max-width: 1200px;
+                        grid-template-columns: repeat( 3, 1fr);
+                        gap: 10px;
+                    }
+                    @include var.breakpoint(pc) {
+                        width: 77%;
+                        min-width: 1000px;
+                        gap: 30px;
+                    }
+
+                    .packplan__custom-card {
+                        .title {
+                            width: 100%;
+                            line-height: 38px;
+                            border-radius: 20px 20px 0 0 ;
+                            background-color: var.$green;
+                            font-size: 2.0rem;
+                            font-weight: 700;
+                            color: white;
+                            text-align: center;
+                            padding-top: 16px;
+                            @include var.breakpoint(tablet) {
+                                font-size: 2.8rem;
+                                line-height: 62px;
+                            }
+                            strong {
+                                font-size: 3.4rem;
+                                @include var.breakpoint(tablet) {
+                                    font-size: 4.0rem;
+                                }
+                            }
+                        }
+                    
+                        .detail {
+                            width: 100%;
+                            background-color: #fff;
+                            border: 2px solid var.$green;
+                            border-radius: 0 0 10px 10px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 6px;
+                            padding-top: 14px;
+                            padding-bottom: 14px;
+                            @include var.breakpoint(tablet) {
+                                padding-top: 24px;
+                                border: 3px solid var.$green;
+                                gap: 20px;
+                            }
+                                
+                            .capacity {
+                                min-width: 160px;
+                                line-height: 25px;
+                                font-size: 1.6rem;
+                                text-align: center;
+                                border-radius: 10px;
+                                background-color: rgba( 245, 224, 69, 0.3);
+                                padding: 0 8px;
+                                @include var.breakpoint(tablet) {
+                                    min-width: 264px;
+                                    line-height: 30px;
+                                    font-size: 1.8rem;
+                                }
+                            }
+
+                            .price {
+                                font-size: 1.6rem;
+                                font-weight: 900;
+                                text-align: center;
+                                @include var.breakpoint(tablet) {
+                                    font-size: 2.0rem;
+                                }
+                                strong {
+                                    font-size: 3.6rem;
+                                    @include var.breakpoint(tablet) {
+                                        font-size: 4rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .packplan__custom-card:nth-of-type(2) {
+                        .title {
+                            background-color: var.$red;
+                        }
+                        .detail {
+                            border: 3px solid var.$red;
+                            .capacity span {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

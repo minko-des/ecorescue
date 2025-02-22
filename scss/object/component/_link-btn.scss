@@ -2,106 +2,68 @@
 @use "../../foundation/variables" as var;
 
 
-.c-link-btn--black,.c-link-btn--white {
-    width: 300px;
-    height: 60px;
-    background-color: var.$black;
-    color: var.$white;
-    border: 1px solid var.$white;
-    transition: all 0.2s;
-    @include var.breakpoint(tablet) {
-        width: 420px;
-        height: 72px;
+.c-link-btn__contact--narrow,.c-link-btn__line--narrow,.c-link-btn__contact--wide,.c-link-btn__line--wide {
+    width: 160px;
+    height: 80px;
+    background-color: var.$orange;
+    border-radius: 8px;
+    box-shadow: 3px 3px 2px #823D11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    .head {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .icon {
+            width: 38px;
+            min-width: 0;
+            min-height: 0;
+        }
+        .title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: white;
+            .u-nowrap {
+                display: block;
+            }
+        }
     }
 
-    a {
-        display: inline-block;
-        width: 100%;
-        line-height: 60px;
-        @include var.breakpoint(tablet) {
-            line-height: 72px;
-        }
+    .lead {
+        font-size: 1.4rem;
+        line-height: 22px;
+        padding: 0 6px;
+        background-color: #fff;
+        border-radius: 6px;
+    }
+}
+.c-link-btn__line--narrow,.c-link-btn__line--wide {
+    background-color: var.$green;
+    box-shadow: 3px 3px 2px #216325;
+}
 
-        span {
-            display: inline-block;
-            width: 100%;
+.c-link-btn__contact--wide,.c-link-btn__line--wide {
+    width: 280px;
+    height: 72px;
+    gap: 2px;
+
+    .head {
+        gap: 18px;
+        .title {
             font-size: 1.8rem;
-            font-weight: 500;
-            position: relative;
-            padding-left: 40px;
-            @include var.breakpoint(tablet) {
-                font-size: 2.0rem;
-                padding-left: 50px;
-            }
-        }
-
-        span::before {
-            content: "";
-            width: 14px;
-            height: 1.0px;
-            background-color: var.$fire;
-            position: absolute;
-            right: 40px;
-            top: 52%;
-            transform: rotate(40deg);
-            transform-origin: bottom right;
-            @include var.breakpoint(tablet) {
-                height: 1.4px;
-                right: 60px;
-            }
-        }
-
-        span::after {
-            content: "";
-            width: 32px;
-            height: 1.0px;
-            background-color: var.$fire;
-            position: absolute;
-            right: 40px;
-            top: 52%;
-            @include var.breakpoint(tablet) {
-                height: 1.4px;
-                right: 60px;
+            .u-nowrap {
+                display: inline-block;
             }
         }
     }
-}
 
-.c-link-btn--white {
-    color: var.$black;
-    background-color: var.$white;
-    border: 1px solid var.$black;
-}
-
-.c-link-btn--black:hover {
-    background-color: rgba( 239, 241, 247, 0.3);
-    color: var.$black;
-    border-color: var.$black;
-}
-.c-link-btn--white:hover {
-    background-color: rgba( 20, 22, 27);
-    color: var.$white;
-    border-color: var.$white;
-}
-
-.c-link-btn--black:hover,.c-link-btn--white:hover {
-    a {
-        span::before {
-            right: 26px;
-            transition: 0.6s;
-            @include var.breakpoint(tablet) {
-                height: 1.8px;
-                right: 46px;
-            }
-        }
-        span::after {
-            width: 60px;
-            right: 26px;
-            transition: 0.6s;
-            @include var.breakpoint(tablet) {
-                width: 60px;
-                right: 46px;
-            }
-        }
+    .lead {
+        font-size: 1.6rem;
+        padding: 0 24px;
     }
 }

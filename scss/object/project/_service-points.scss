@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@use "../../foundation/variables" as var;
+
+
+.p-service-points {
+    margin-top: 80px;
+    @include var.breakpoint(tablet) {
+        margin-top: 100px;
+    }
+    
+    .service-points__content {
+        width: 100%;
+        margin-top: 48px;
+
+        .service-point-card__container {
+            width: 94%;
+            display: grid;
+            justify-content: center;
+            gap: 38px;
+            margin: 0 auto;
+            @include var.breakpoint(tablet) {
+                max-width: 740px;
+                grid-template-columns: repeat( 2, 1fr);
+                grid-template-rows: repeat( 3, 1fr);
+                gap: 56px 14px;
+                margin-top: 64px;
+            }
+            @include var.breakpoint(pc) {
+                max-width: 1170px;
+                grid-template-columns: repeat( 3, 1fr);
+                grid-template-rows: repeat( 2, 1fr);
+            }
+        }
+    }
+}

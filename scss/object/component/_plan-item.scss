@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@use "../../foundation/variables" as var;
+
+
+.c-plan-item {
+    width: 152px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #C2E9C4;
+    font-size: 1.6rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include var.breakpoint(pc) {
+        width: 200px;
+        height: 64px;
+        border-radius: 20px;
+        background-color: #C2E9C4;
+        font-size: 2.0rem;
+    }
+}

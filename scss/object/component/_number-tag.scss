@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@use "../../foundation/variables" as var;
+
+
+.c-number-tag {
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var.$yellow;
+    flex-shrink: 0;
+    strong {
+        font-size: 2rem;
+        @include var.breakpoint(pc) {
+            font-size: 3.2rem;
+        }
+    }
+    @include var.breakpoint(pc) {
+        width: 180px;
+        height: 64px;
+        line-height: 64px;
+        font-size: 2rem;
+        border-radius: 32px;
+    }
+}

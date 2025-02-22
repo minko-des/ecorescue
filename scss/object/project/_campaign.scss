@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@use "../../foundation/variables" as var;
+
+
+.p-campaign {
+    width: 100%;
+    background-image: url(../../../images/campaign_bg.png);
+    background-position: top center;
+    background-size: 2000px 100%;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    @include var.breakpoint(tablet) {
+        background-size: auto 100%;
+        gap: 30px;
+        padding-bottom: 40px;
+    }
+
+    h2 {
+        width: 340px;
+        padding-top: 24px;
+        margin: 0 auto;
+        @include var.breakpoint(tablet) {
+            width: 545px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        font-size: 1.6rem;
+        color: white;
+        text-align: center;
+        padding: 0 18px;
+        @include var.breakpoint(tablet) {
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+
+        strong {
+            font-size: 2.4rem;
+            color: #F25E36;
+            padding: 0 12px;
+            -webkit-text-stroke: 1px white;
+            @include var.breakpoint(tablet) {
+                font-size: 4.0rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .item-wrap {
+        width: 92%;
+        max-width: 370px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        @include var.breakpoint(tablet) {
+            max-width: 1100px;
+            flex-direction: row;
+        }
+        @include var.breakpoint(tablet) {
+            gap: 32px;
+        }
+
+        .campaign__item {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

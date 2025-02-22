@@ -5,7 +5,6 @@
 @use "foundation/reset";
 @use "foundation/base";
 @use "foundation/fonts";
-@use "foundation/keyframes";
 @use "foundation/variables";
 
 //layout
@@ -15,33 +14,32 @@
 
 //object_component
 @use "object/component/link-btn";
-@use "object/component/contact-btn";
-@use "object/component/menu-btn";
-@use "object/component/section__title";
-@use "object/component/square-mark";
-@use "object/component/slider-btn";
-@use "object/component/insta-icon";
+@use "object/component/plan-item";
+@use "object/component/number-tag";
 
 //object_project
-@use "object/project/catch";
 @use "object/project/main-visual";
-@use "object/project/about";
-@use "object/project/orderproduct";
+@use "object/project/header__nav";
+@use "object/project/logo-title";
 @use "object/project/p-footer";
 @use "object/project/p-header";
-@use "object/project/flow-section";
-@use "object/project/originalitems";
-@use "object/project/instagram";
-@use "object/project/partner";
+@use "object/project/contact-banner";
+@use "object/project/campaign";
+@use "object/project/section-title";
+@use "object/project/service-points";
+@use "object/project/service-point-card";
+@use "object/project/strengths";
+@use "object/project/packplan";
+@use "object/project/packplan-card";
+@use "object/project/plan-contrast";
+@use "object/project/flow";
+@use "object/project/service-list";
+@use "object/project/trouble";
+@use "object/project/response";
+@use "object/project/works";
+@use "object/project/area";
 @use "object/project/copyright";
-@use "object/project/swiper-area";
-@use "object/project/sidebar";
-@use "object/project/archive__heading";
-@use "object/project/archive__content";
-@use "object/project/pagination";
-@use "object/project/archive-item__main-visual";
-@use "object/project/archive-item__content";
 
 //object_utility
-@use "object/utility/active-animation";
-@use "object/utility/noScroll";
+@use "object/utility/txt-red";
+@use "object/utility/nowrap";

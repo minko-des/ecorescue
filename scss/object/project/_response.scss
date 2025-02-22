@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@use "../../foundation/variables" as var;
+
+
+.p-response {
+    margin-top: 80px;
+    @include var.breakpoint(tablet) {
+        margin-top: 100px;
+    }
+
+    .content-area {
+        padding-bottom: 20px;
+        @include var.breakpoint(tablet) {
+            padding-bottom: 40px;
+        }
+
+        .response-list {
+            width: 94%;
+            min-width: 340px;
+            max-width: 1000px;
+            margin: 24px auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            @include var.breakpoint(tablet) {
+                margin-top: 40px;
+            }
+
+            .response-item {
+                width: 100%;
+                max-width: 500px;
+                border: 1px solid var.$gray;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                @include var.breakpoint(tablet) {
+                    flex-direction: row;
+                    min-height: 380px;
+                    max-width: 980px;
+                }
+
+                &__head {
+                    border-radius: 20px;
+                    display: flex;
+                    @include var.breakpoint(tablet) {
+                        width: 50%;
+                    }
+                    
+                    .profile {
+                        width: 50%;
+                        background-color: #fff;
+                        border-radius: 20px;
+                        padding-left: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 12px;
+                        @include var.breakpoint(tablet) {
+                            gap: 30px;
+                        }
+                        img {
+                            width: 120px;
+                            max-width: 190px;
+                            @include var.breakpoint(tablet) {
+                                width: 80%;
+                            }
+                        }
+                        .info {
+                            font-size: 1.6rem;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            @include var.breakpoint(tablet) {
+                                font-size: 1.8rem;
+                                gap: 8px;
+                            }
+                        }
+                    }
+
+                    .score {
+                        width: 50%;
+                        background-color: #fff;
+                        border-radius: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 14px;
+                        padding: 14px 0;
+                        @include var.breakpoint(tablet) {
+                            gap: 30px;
+                        }
+                        .score-item {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            .title {
+                                width: 145px;
+                                font-size: 1.4rem;
+                                line-height: 24px;
+                                text-align: center;
+                                border-radius: 17px;
+                                background-color: rgba( 247, 202, 190, 0.6);
+                                @include var.breakpoint(tablet) {
+                                    width: 180px;
+                                    font-size: 1.6rem;
+                                    line-height: 34px;
+                                }
+                            }
+                            .star {
+                                font-size: 1.8rem;
+                                letter-spacing: 0.5rem;
+                                color: var.$red;
+                                @include var.breakpoint(tablet) {
+                                    font-size: 2.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .review {
+                    width: 100%;
+                    padding: 24px;
+                    background-color: #E9F8EA;
+                    border-radius: 0  0 20px 20px;
+                    @include var.breakpoint(tablet) {
+                        width: 50%;
+                        padding: 36px;
+                        border-radius: 0 20px 20px 0;
+                    }
+
+                    .head {
+                        font-weight: 600;
+                        @include var.breakpoint(tablet) {
+                            font-size: 2.4rem;
+                        }
+                    }
+                    .text {
+                        font-size: 1.6rem;
+                        margin-top: 16px;
+                        @include var.breakpoint(tablet) {
+                            font-size: 1.8rem;
+                            line-height: 1.6;
+                            margin-top: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@use "../../foundation/variables" as var;
+
+
+.p-area {
+    margin-top: 80px;
+    @include var.breakpoint(tablet) {
+        margin-top: 100px;
+    }
+
+    .content-area {
+        width: 100%;
+        background-color: rgba( 245, 224, 69, 0.1);
+        padding-bottom: 20px;
+        position: relative;
+        @include var.breakpoint(tablet) {
+            padding-bottom: 40px;
+        }
+        
+        .text {
+            font-size: 1.6rem;
+            position: absolute;
+            top: 26px;
+            left: 35%;
+            transform: translateX(-50%);
+            @include var.breakpoint(tablet) {
+                font-size: 2.4rem;
+                top: 100px;
+                left: 42%;
+            }
+            @include var.breakpoint(pc) {
+                top: 120px;
+            }
+        }
+        img {
+            width: 65%;
+            max-width: 280px;
+            display: block;
+            margin: 0 auto;
+            padding-top: 20px;
+            @include var.breakpoint(tablet) {
+                max-width: 600px;
+                padding-top: 40px;
+            }
+        }
+    }
+}

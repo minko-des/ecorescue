@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@use "../../foundation/variables" as var;
+
+
+.p-trouble {
+    margin-top: 80px;
+    @include var.breakpoint(tablet) {
+        margin-top: 100px;
+    }
+    
+    .content-area {
+        padding-bottom: 20px;
+        background-color: #E9F8EA;
+        @include var.breakpoint(tablet) {
+            padding-bottom: 40px;
+        }
+        
+        .trouble-list {
+            width: 94%;
+            padding: 24px 10px;
+            margin: 24px auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            @include var.breakpoint(tablet) {
+                margin-top: 40px;
+                max-width: 720px;
+            }
+            @include var.breakpoint(pc) {
+                width: 80%;
+                max-width: 980px;
+                padding: 30px 72px;
+            }
+
+            .trouble-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+                @include var.breakpoint(tablet) {
+                    flex-direction: row;
+                    gap: 32px;
+                }
+
+                .c-number-tag {
+                    width: 140px;
+                    @include var.breakpoint(pc) {
+                        width: 180px;
+                    }
+                }
+                
+                .text {
+                    text-align: center;
+                    @include var.breakpoint(tablet) {
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+        }
+
+        .text-wrap {
+            width: 94%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            text-align: center;
+            margin: 32px auto 0 auto;
+            @include var.breakpoint(tablet) {
+                max-width: 750px;
+            }
+
+            .text-middle {
+                font-size: 2rem;
+                font-weight: 700;
+                color: var.$red;
+                @include var.breakpoint(tablet) {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+}

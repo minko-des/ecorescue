@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@use "../../foundation/variables" as var;
+
+
+.p-logo-title {
+    a {
+        display: inline-block;
+
+        .logo-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            
+            p {
+                font-family: "M PLUS Rounded 1c", serif;
+                font-size: 0.9rem;
+                padding-bottom: 6px;
+                white-space: nowrap;
+                @include var.breakpoint(tablet) {
+                    font-size: 1.6rem;
+                }
+            }
+            img {
+                width: 34px;
+                @include var.breakpoint(tablet) {
+                    width: 50px;
+                }
+            }
+        }
+
+        .logo-name {
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            white-space: nowrap;
+            span {
+                color: var.$green;
+            }
+            @include var.breakpoint(tablet) {
+                font-size: 2.4rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@use "../../foundation/variables" as var;
+
+
+.p-works {
+    margin-top: 80px;
+    @include var.breakpoint(tablet) {
+        margin-top: 100px;
+    }
+
+    .content-area {
+        width: 100%;
+        background-image: url(../../../images/bg-green-dott.jpg);
+        background-size: cover;
+        padding-bottom: 20px;
+        @include var.breakpoint(tablet) {
+            padding-bottom: 40px;
+        }
+        
+        .article-wrap {
+            width: 94%;
+            min-width: 340px;
+            max-width: 420px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding-top: 24px;
+            margin: 0 auto;
+            @include var.breakpoint(tablet) {
+                max-width: 840px;
+                gap: 60px;
+                padding-top: 40px;
+            }
+            @include var.breakpoint(pc) {
+                width: 78%;
+                max-width: 1000px;
+            }
+
+            .works__article {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;                
+                background-color: #fff;
+                border-radius: 20px;
+                padding-top: 16px;
+                padding-bottom: 20px;
+                @include var.breakpoint(tablet) {
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+                    gap: 24px;
+                }
+
+                .c-number-tag {
+                    @include var.breakpoint(tablet) {
+                        width: 180px;
+                    }
+                }
+                
+                .image__wrap {
+                    width: 96%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 16px;
+                    @include var.breakpoint(tablet) {
+                        width: 92%;
+                        flex-direction: row;
+                    }
+
+                    .before,.after {
+                        background-color: var.$gray;
+                        border-radius: 20px;
+                        padding-bottom: 16px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        @include var.breakpoint(tablet) {
+                            width: 48.5%;
+                        }
+                        .head {
+                            font-size: 2rem;
+                            color: #fff;
+                            line-height: 48px;
+                            @include var.breakpoint(pc) {
+                                font-size: 3.2rem;
+                                line-height: 65px;
+                            }
+                        }
+                        .img-container {
+                            width: 92%;
+                            aspect-ratio: 1.4 / 1;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    .after {
+                        background-color: var.$green;
+                    }
+                }
+
+                .review {
+                    width: 96%;
+                    display: flex;
+                    gap: 10px;
+                    @include var.breakpoint(tablet) {
+                        width: 74%;
+                        gap: 30px;
+                    }
+
+                    .img-container {
+                        width: 58px;
+                        height: 65px;
+                        flex-shrink: 0;
+                        @include var.breakpoint(tablet) {
+                            width: 100px;
+                            height: 112px;
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: top;
+                        }
+                    }
+
+                    p {
+                        font-size: 1.6rem;
+                        @include var.breakpoint(tablet) {
+                            font-size: 1.8rem;
+                            padding-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
