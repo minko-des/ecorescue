@@ -8,9 +8,7 @@
     background-image: url(../../../images/main-visual_bg.jpg);
     background-size: cover;
     position: relative;
-    margin-top: 100px;
     @include var.breakpoint(tablet) {
-        margin-top: 144px;
         padding-bottom: 140px;
         background-position: center;
     }
@@ -116,11 +114,11 @@
             bottom: -40px;
             right: -6%;
             @include var.breakpoint(tablet) {
-                width: 47%;
+                width: 49%;
                 min-width: 220px;
                 max-width: 385px;
-                bottom: -60px;
-                right: -52%;
+                bottom: -68px;
+                right: -50%;
             }
         }
         

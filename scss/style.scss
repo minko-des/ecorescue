@@ -11,11 +11,14 @@
 @use "layout/footer";
 @use "layout/wrapper";
 @use "layout/header";
+@use "layout/sidebar";
+@use "layout/main";
 
 //object_component
 @use "object/component/link-btn";
 @use "object/component/plan-item";
 @use "object/component/number-tag";
+@use "object/component/hamburger-btn";
 
 //object_project
 @use "object/project/main-visual";
@@ -39,7 +42,14 @@
 @use "object/project/works";
 @use "object/project/area";
 @use "object/project/copyright";
+@use "object/project/sidebar__nav";
+@use "object/project/buy-service";
+@use "object/project/items";
+@use "object/project/question";
+@use "object/project/privacypolicy";
+@use "object/project/contact-form";
 
 //object_utility
 @use "object/utility/txt-red";
 @use "object/utility/nowrap";
+@use "object/utility/open-menu";

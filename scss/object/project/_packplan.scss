@@ -3,9 +3,18 @@
 
 
 .p-packplan {
-    margin-top: 80px;
+    margin-top: 30px;
     @include var.breakpoint(tablet) {
-        margin-top: 100px;
+        margin-top: 80px;
+    }
+    
+    .p-section-title {
+        .section-title__Illust {
+            left: -5%;
+            @include var.breakpoint(pc) {
+                left: 40px;
+            }
+        }
     }
     
     .content-area {
@@ -204,6 +213,7 @@
                 }
                 .text {
                     font-size: 1.8rem;
+                    font-weight: 500;
                     @include var.breakpoint(tablet) {
                         font-size: 2.8rem;
                     }

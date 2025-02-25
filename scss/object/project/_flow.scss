@@ -8,6 +8,15 @@
         margin-top: 100px;
     }
 
+    .p-section-title {
+        .section-title__Illust {
+            left: -5%;
+            @include var.breakpoint(pc) {
+                left: 40px;
+            }
+        }
+    }
+
     .content-area {
         padding-bottom: 20px;
         @include var.breakpoint(tablet) {

@@ -32,6 +32,9 @@
     align-items: flex-start;
   }
 }
+.p-footer .footer__navigation .p-logo-title {
+  height: auto;
+}
 .p-footer .footer__navigation .p-logo-title a .logo-head p {
   font-size: 1.6rem;
 }

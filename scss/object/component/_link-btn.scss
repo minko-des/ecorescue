@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    transition: 0.3s;
 
     .head {
         display: flex;
@@ -36,10 +36,12 @@
 
     .lead {
         font-size: 1.4rem;
+        text-align: center;
         line-height: 22px;
         padding: 0 6px;
         background-color: #fff;
         border-radius: 6px;
+        margin-top: 4px;
     }
 }
 .c-link-btn__line--narrow,.c-link-btn__line--wide {
@@ -50,7 +52,6 @@
 .c-link-btn__contact--wide,.c-link-btn__line--wide {
     width: 280px;
     height: 72px;
-    gap: 2px;
 
     .head {
         gap: 18px;
@@ -66,4 +67,9 @@
         font-size: 1.6rem;
         padding: 0 24px;
     }
+}
+
+.c-link-btn__contact--narrow:hover,.c-link-btn__line--narrow:hover,.c-link-btn__contact--wide:hover,.c-link-btn__line--wide:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }

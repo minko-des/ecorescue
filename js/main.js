@@ -2,7 +2,6 @@
 // $(document).ready(function() {
 document.addEventListener("DOMContentLoaded", () => {
 
-
     const linkBtnContacts = document.querySelectorAll(".js-link-btn__contact");
     const linkBtnLines = document.querySelectorAll(".js-link-btn__line");
 
@@ -21,19 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
             btn.classList.toggle("c-link-btn__line--wide", isWide);
             btn.classList.toggle("c-link-btn__line--narrow", !isWide);
         });
-
-
-        // if (window.matchMedia("(min-width: 768px)").matches) {
-        //     linkBtnContacts.classList.remove("c-link-btn__contact--narrow");
-        //     linkBtnContacts.classList.add("c-link-btn__contact--wide");
-        //     linkBtnLines.classList.remove("c-link-btn__line--narrow");
-        //     linkBtnLines.classList.add("c-link-btn__line--wide");
-        // } else {
-        //     linkBtnContacts.classList.remove("c-link-btn__contact--wide");
-        //     linkBtnContacts.classList.add("c-link-btn__contact--narrow");
-        //     linkBtnLines.classList.remove("c-link-btn__line--wide");
-        //     linkBtnLines.classList.add("c-link-btn__line--narrow");
-        // }
     }
 
     // 初回チェック
@@ -42,7 +28,18 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", toggleClass);
 
 
-    
+    // メニューページ表示非表示関数
+    const hamburgerBtn = document.querySelector(".c-hamburger-btn");
+    const sideBar = document.querySelector(".l-sidebar");
+
+    hamburgerBtn.addEventListener("click" , () => {
+        sideBar.classList.toggle("u-open-menu");
+
+        const currentText = hamburgerBtn.textContent;
+        hamburgerBtn.textContent = currentText == "close" ? "menu" : "close";
+        
+    });
+
 
     // メニューページ表示非表示関数
     // const menuBtn = document.querySelector(".c-menu-btn");
@@ -63,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
     //         document.body.classList.remove("u-noScroll");
     //     }
     // }
-
 
 
 });

@@ -1,11 +1,11 @@
 .p-header {
   width: 93%;
   margin: 0 auto;
-  padding: 32px 0 18px 0;
+  padding: 20px 0 18px 0;
 }
 @media (min-width: 768px) {
   .p-header {
-    padding: 20px 0 6px 0;
+    padding: 20px 0 8px 0;
   }
 }
 @media (min-width: 1100px) {
@@ -34,7 +34,7 @@
   height: 80px;
   padding-left: 20px;
   display: flex;
-  gap: 8px;
+  gap: 12px;
 }
 .p-header .header-top .banner-group .freedial-banner .freedial-area {
   align-self: center;
@@ -50,13 +50,16 @@
   height: 34px;
 }
 .p-header .header-top .banner-group .freedial-banner .freedial-area .freedial .tel {
-  font-size: 2.6rem;
+  font-size: 3rem;
+  font-weight: 500;
   color: black;
   white-space: nowrap;
+  padding-bottom: 4px;
 }
 .p-header .header-top .banner-group .freedial-banner .freedial-area p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #E83A17;
+  white-space: nowrap;
 }
 .p-header .header-top .banner-group .freedial-banner .discount {
   width: 145px;
@@ -86,37 +89,5 @@
   .p-header .header-top .banner-group .c-link-btn__contact--narrow, .p-header .header-top .banner-group .c-link-btn__line--narrow {
     display: flex;
   }
-}
-.p-header .header-top .hamburger-btn {
-  display: block;
-}
-@media (min-width: 768px) {
-  .p-header .header-top .hamburger-btn {
-    display: none;
-  }
-}
-.p-header .header-top .hamburger-btn span {
-  font-family: "M PLUS Rounded 1c", serif;
-  font-size: 1.4rem;
-  color: #454A47;
-  position: relative;
-}
-.p-header .header-top .hamburger-btn span::before {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: #454A47;
-  position: absolute;
-  top: -3px;
-  left: 0;
-}
-.p-header .header-top .hamburger-btn span::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: #454A47;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
 }
 /*# sourceMappingURL=p-header.css.map */

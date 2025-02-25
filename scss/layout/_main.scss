@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@use "../foundation/variables" as var;
+
+
+.l-main {
+    padding-top: 88px;
+    @include var.breakpoint(tablet) {
+        padding-top: 156px;
+    }
+}

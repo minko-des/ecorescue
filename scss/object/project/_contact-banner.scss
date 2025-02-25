@@ -80,6 +80,7 @@
 
                 &__head {
                     font-size: 1.3rem;
+                    font-weight: 500;
                     @include var.breakpoint(tablet) {
                         font-size: 1.8rem;
                     }
@@ -101,11 +102,12 @@
                     }
 
                     .tel {
-                        font-size: clamp( 2.6rem, 7vw, 3.0rem);
+                        font-size: clamp( 2.8rem, 7.5vw, 3.4rem);
                         font-weight: 600;
                         color: var.$red;
+                        border: none;
                         @include var.breakpoint(tablet) {
-                            font-size: 4.2rem;
+                            font-size: 4.6rem;
                             font-weight: 600;
                         }
                     }
@@ -135,7 +137,7 @@
                         border-radius: 6px;
                         position: absolute;
                         left: -1%;
-                        bottom: -4px;
+                        bottom: -1px;
                         z-index: -1;
                     }
                 }

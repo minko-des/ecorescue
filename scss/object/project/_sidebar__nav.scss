@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@use "../../foundation/variables" as var;
+
+
+.p-sidebar__nav {
+    padding-top: 140px;
+    padding-left: 40px;
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        &__item {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.l-sidebar .btn-wrap {
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+    margin-left: 5%;
+}
+
+.p-sidebar.menuOpen {
+    top: 0;
+}

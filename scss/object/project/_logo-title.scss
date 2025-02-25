@@ -3,6 +3,12 @@
 
 
 .p-logo-title {
+    transition: 0.3s;
+    height: 50px;
+    @include var.breakpoint(tablet) {
+        height: auto;
+    }
+    
     a {
         display: inline-block;
 
@@ -13,7 +19,7 @@
             
             p {
                 font-family: "M PLUS Rounded 1c", serif;
-                font-size: 0.9rem;
+                font-size: 1rem;
                 padding-bottom: 6px;
                 white-space: nowrap;
                 @include var.breakpoint(tablet) {
@@ -30,7 +36,7 @@
 
         .logo-name {
             font-family: "M PLUS Rounded 1c", serif;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             font-weight: 800;
             white-space: nowrap;
             span {
@@ -41,4 +47,8 @@
             }
         }
     }
+}
+
+.p-logo-title:hover {
+    opacity: 0.8;
 }

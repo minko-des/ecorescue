@@ -1,0 +1,26 @@
+.p-sidebar {
+  width: 100%;
+}
+.p-sidebar .sidebar__nav {
+  padding-top: 124px;
+  padding-left: 40px;
+}
+.p-sidebar .sidebar__nav .nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.p-sidebar .sidebar__nav .nav-menu__item {
+  font-size: 2rem;
+}
+.p-sidebar .btn-wrap {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+  margin-left: 5%;
+}
+
+.p-sidebar.menuOpen {
+  top: 0;
+}
+/*# sourceMappingURL=p-sidebar.css.map */
