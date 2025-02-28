@@ -26,3 +26,10 @@
         }
     }
 }
+
+.nav-menu .menu-item {
+    transition: 0.2s;
+}
+.nav-menu .menu-item:hover {
+    opacity: 0.6;
+}

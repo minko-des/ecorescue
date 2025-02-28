@@ -4,7 +4,7 @@
 
 .p-campaign {
     width: 100%;
-    background-image: url(../../../images/campaign_bg.png);
+    background-image: url(../images/campaign_bg.png);
     background-position: top center;
     background-size: 2000px 100%;
     padding-bottom: 24px;
@@ -45,10 +45,11 @@
             font-size: 2.4rem;
             color: #F25E36;
             padding: 0 12px;
-            -webkit-text-stroke: 1px white;
+            text-shadow: 1px 1px white;
             @include var.breakpoint(tablet) {
                 font-size: 4.0rem;
                 font-weight: 700;
+                text-shadow: 2px 2px white;
             }
         }
     }

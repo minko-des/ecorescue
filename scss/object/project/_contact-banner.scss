@@ -79,11 +79,8 @@
                 }
 
                 &__head {
-                    font-size: 1.3rem;
+                    font-size: clamp( 1.3rem, 2.2vw, 2.0rem);
                     font-weight: 500;
-                    @include var.breakpoint(tablet) {
-                        font-size: 1.8rem;
-                    }
                 }
 
                 .freedial {

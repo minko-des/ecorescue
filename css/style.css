@@ -283,7 +283,8 @@ progress {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem=16pxを10pxに変換 */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -369,7 +370,7 @@ ul, ol {
 
 .l-sidebar {
   width: 100%;
-  height: 560px;
+  padding-bottom: 32px;
   background-color: #FAF7E8;
   position: fixed;
   top: -560px;
@@ -457,7 +458,9 @@ ul, ol {
 
 .c-link-btn__contact--narrow:hover, .c-link-btn__line--narrow:hover, .c-link-btn__contact--wide:hover, .c-link-btn__line--wide:hover {
   cursor: pointer;
-  opacity: 0.8;
+  box-shadow: none;
+  opacity: 0.9;
+  transform: translate(2px, 2px);
 }
 
 .c-plan-item {
@@ -553,7 +556,7 @@ ul, ol {
 .p-main-visual {
   width: 100%;
   padding-bottom: 110px;
-  background-image: url(../../../images/main-visual_bg.jpg);
+  background-image: url(../images/main-visual_bg.jpg);
   background-size: cover;
   position: relative;
 }
@@ -719,6 +722,14 @@ ul, ol {
   border-right: none;
 }
 
+.nav-menu .menu-item {
+  transition: 0.2s;
+}
+
+.nav-menu .menu-item:hover {
+  opacity: 0.6;
+}
+
 .p-logo-title {
   transition: 0.3s;
   height: 50px;
@@ -771,7 +782,7 @@ ul, ol {
 }
 
 .p-logo-title:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .p-footer {
@@ -1136,13 +1147,8 @@ ul, ol {
   }
 }
 .p-contact-banner .banner-content .main-info .freedial-area__head {
-  font-size: 1.3rem;
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
   font-weight: 500;
-}
-@media (min-width: 768px) {
-  .p-contact-banner .banner-content .main-info .freedial-area__head {
-    font-size: 1.8rem;
-  }
 }
 .p-contact-banner .banner-content .main-info .freedial-area .freedial {
   display: flex;
@@ -1223,7 +1229,7 @@ ul, ol {
 
 .p-campaign {
   width: 100%;
-  background-image: url(../../../images/campaign_bg.png);
+  background-image: url(../images/campaign_bg.png);
   background-position: top center;
   background-size: 2000px 100%;
   padding-bottom: 24px;
@@ -1269,12 +1275,13 @@ ul, ol {
   font-size: 2.4rem;
   color: #F25E36;
   padding: 0 12px;
-  -webkit-text-stroke: 1px white;
+  text-shadow: 1px 1px white;
 }
 @media (min-width: 768px) {
   .p-campaign p strong {
     font-size: 4rem;
     font-weight: 700;
+    text-shadow: 2px 2px white;
   }
 }
 .p-campaign .item-wrap {
@@ -3166,10 +3173,12 @@ ul, ol {
 
 .p-works {
   margin-top: 80px;
+  scroll-margin-top: 112px;
 }
 @media (min-width: 768px) {
   .p-works {
     margin-top: 100px;
+    scroll-margin-top: 196px;
   }
 }
 .p-works .content-area {
@@ -3324,10 +3333,12 @@ ul, ol {
 
 .p-area {
   margin-top: 80px;
+  scroll-margin-top: 112px;
 }
 @media (min-width: 768px) {
   .p-area {
     margin-top: 100px;
+    scroll-margin-top: 196px;
   }
 }
 .p-area .content-area {
@@ -3711,6 +3722,7 @@ ul, ol {
   display: flex;
   align-items: center;
   gap: 12px;
+  transition: 0.2s;
 }
 @media (min-width: 768px) {
   .p-question .content-area .category-menu .menu__title a {
@@ -3724,6 +3736,9 @@ ul, ol {
   .p-question .content-area .category-menu .menu__title a p {
     font-size: 2rem;
   }
+}
+.p-question .content-area .category-menu .menu__title a:hover {
+  opacity: 0.7;
 }
 .p-question .content-area .content-wrap {
   width: 94%;
@@ -3748,6 +3763,12 @@ ul, ol {
 }
 .p-question .content-area .content-wrap .category-group {
   width: 100%;
+  scroll-margin-top: 112px;
+}
+@media (min-width: 768px) {
+  .p-question .content-area .content-wrap .category-group {
+    scroll-margin-top: 196px;
+  }
 }
 .p-question .content-area .content-wrap .category-group .title {
   width: 260px;
@@ -3974,7 +3995,7 @@ ul, ol {
   display: flex;
   justify-content: space-between;
 }
-.p-contact-form .content-area .contact-form-wrap .contact-form .contact-form__item__text .form__label p {
+.p-contact-form .content-area .contact-form-wrap .contact-form .contact-form__item__text .form__label .tag {
   font-size: 1.4rem;
   color: #fff;
   border-radius: 6px;
@@ -4030,8 +4051,12 @@ ul, ol {
 .p-contact-form .content-area .contact-form-wrap .contact-form .contact-form__item__button .note a {
   display: inline-block;
   color: #E83A17;
+  transition: 0.2s;
 }
-.p-contact-form .content-area .contact-form-wrap .contact-form .contact-form__item__button button {
+.p-contact-form .content-area .contact-form-wrap .contact-form .contact-form__item__button .note a:hover {
+  opacity: 0.7;
+}
+.p-contact-form .content-area .contact-form-wrap .contact-form .contact-form__item__button p .wpcf7-form-control {
   width: 280px;
   line-height: 50px;
   font-size: 2rem;
@@ -4041,6 +4066,12 @@ ul, ol {
   background-color: #3BAE41;
   box-shadow: 3px 3px 2px #216325;
   margin: 0 auto;
+  transition: 0.3s;
+}
+.p-contact-form .content-area .contact-form-wrap .contact-form .contact-form__item__button p .wpcf7-form-control:hover {
+  box-shadow: none;
+  opacity: 0.9;
+  transform: translate(2px, 2px);
 }
 .p-contact-form .content-area .contact-form-wrap .contact-form fieldset {
   border: none;

@@ -3,7 +3,8 @@
 
 
 html {
-    font-size: 62.5%  /* 1rem=16pxを10pxに変換 */
+    font-size: 62.5%;  /* 1rem=16pxを10pxに変換 */
+    scroll-behavior: smooth;
 }
 
 body {
