@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>">
+<html lang="<?php echo esc_attr(language_attributes()); ?>">
 <head>
-    <meta charset="<?php esc_attr(bloginfo('UTF-8') ); ?>">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>不用品回収エコレスキュー</title>
-    <meta name="description" content="<?php esc_attr(bloginfo('description') ); ?>">
     <meta name="keywords" content="エコレスキュー,不用品回収,大阪,粗大ゴミ処分,ゴミ屋敷片付け,遺品整理,家電買取">
-
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
