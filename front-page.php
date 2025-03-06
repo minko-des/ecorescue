@@ -4,14 +4,14 @@
                 <p class="catch-copy"><span class="undermarker">大阪府エリア</span>の<span class="u-nowrap"><strong>不用品•粗大ゴミ</strong>回収は</span><br><span class="nowrap">お任せ下さい「最短即日対応」</span></p>
                 <div class="card-unit">
                     <div class="point-card-wrap">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/images/main_point01.png') ); ?>" alt="サービスポイントバナー01">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/images/main_point02.png') ); ?>" alt="サービスポイントバナー02">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/images/main_point03.png') ); ?>" alt="サービスポイントバナー03">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/images/main_point01.png') ); ?>" alt="サービスポイント1 基本料金０円">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/images/main_point02.png') ); ?>" alt="サービスポイント2 お得なパックプラン">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/images/main_point03.png') ); ?>" alt="サービスポイント3 買取りサービス">
                     </div>
                     <div class="free-card">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/images/main_free.png') ); ?>" alt="無料サービスバナー">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/images/main_free.png') ); ?>" alt="ご相談、お見積り、出張費 無料">
                     </div>
-                    <img class="main-character" src="<?php echo esc_url(get_theme_file_uri('/images/character_unit.png') ); ?>" alt="キャラクター画像">
+                    <img class="main-character" src="<?php echo esc_url(get_theme_file_uri('/images/character_unit.png') ); ?>" alt="イメージキャラクター 元消防士の頼れる「エコわんくん」">
                     <p class="note">どのような内容でも構いません、まずはお気軽にご相談ください</p>
                 </div>
             </section>
@@ -19,27 +19,29 @@
             <?php get_template_part('template-parts/contact-banner'); ?>
             
             <section class="p-campaign">
-                <h2><img src="<?php echo esc_url(get_theme_file_uri('/images/campaign-title.png') ); ?>" alt="特割キャンペーン実施中"></h2>
+                <h2>特割キャンペーン実施中
+                    <img src="<?php echo esc_url(get_theme_file_uri('/images/campaign-title.png') ); ?>" alt="">
+                </h2>
                 <p>ホームページを見て不用品回収をご依頼くださった方に特別価格!<br><strong>最大10,000円お得</strong>に!</p>
                 <div class="item-wrap">
                     <picture class="campaign__item">
                         <source srcset="<?php echo esc_url(get_theme_file_uri('/images/campaign-ss.png') ); ?>" media="(min-width: 768px)">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/images/campaign-ss_sp.png') ); ?>" alt="キャンペーンSSプラン">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/images/campaign-ss_sp.png') ); ?>" alt="SSパックが5000円に">
                     </picture>
                     <picture class="campaign__item">
                         <source srcset="<?php echo esc_url(get_theme_file_uri('/images/campaign-s.png') ); ?>" media="(min-width: 768px)">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/images/campaign-s_sp.png') ); ?>" alt="キャンペーンSプラン">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/images/campaign-s_sp.png') ); ?>" alt="Sパックが10000円に">
                     </picture>
                     <picture class="campaign__item">
                         <source srcset="<?php echo esc_url(get_theme_file_uri('/images/campaign-m.png') ); ?>" media="(min-width: 768px)">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/images/campaign-m_sp.png') ); ?>" alt="キャンペーンMプラン">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/images/campaign-m_sp.png') ); ?>" alt="Mパックが20000円に">
                     </picture>
                 </div>
             </section>
 
             <section class="p-service-points">
                 <div class="p-section-title">
-                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イラスト">
+                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イメージキャラクター「エコわんくん」">
                     <hgroup class="title-group">
                         <p class="head">知って納得！</p>
                         <p class="lead">エコレスキューが選ばれる</p>
@@ -53,7 +55,7 @@
                             <h3 class="card__title">業界<span class="u-txt-red">最安値</span>に挑戦</h3>
                             <figure class="card__thumbnail">
                                 <div class="card__thumbnail__img">
-                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/point_01.png') ); ?>" alt="イメージ画像">
+                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/point_01.png') ); ?>" alt="イメージイラスト">
                                 </div>
                                 <figcaption>当社では他業者さんの価格をチェックし、常に最安値を目指しています。もし１円でも高い場合はお気軽にご相談ください。</figcaption>
                             </figure>
@@ -63,7 +65,7 @@
                             <h3 class="card__title"><span class="u-txt-red">まるごと</span>お任せ</h3>
                             <figure class="card__thumbnail">
                                 <div class="card__thumbnail__img">
-                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/point_02.png') ); ?>" alt="イメージ画像">
+                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/point_02.png') ); ?>" alt="イメージイラスト">
                                 </div>
                                 <figcaption>当社では、不用品１点からゴミ屋敷まで、規模に関わらず対応させていただきます。</figcaption>
                             </figure>
@@ -73,7 +75,7 @@
                             <h3 class="card__title"><span class="u-txt-red">高価買取り</span>サービス</h3>
                             <figure class="card__thumbnail">
                                 <div class="card__thumbnail__img">
-                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/point_03.png') ); ?>" alt="イメージ画像">
+                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/point_03.png') ); ?>" alt="イメージイラスト">
                                 </div>
                                 <figcaption>買取り可能なものはできる限り高く買取りいたします。ベテランスタッフが現地にてしっかり対応させていただきます。</figcaption>
                             </figure>
@@ -83,7 +85,7 @@
                             <h3 class="card__title">最速<span class="u-txt-red">即日回収</span></h3>
                             <figure class="card__thumbnail">
                                 <div class="card__thumbnail__img">
-                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/point_04.png') ); ?>" alt="イメージ画像">
+                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/point_04.png') ); ?>" alt="イメージイラスト">
                                 </div>
                                 <figcaption>トラックも多数保有しているため、お電話1本で担当が駆け付けます。</figcaption>
                             </figure>
@@ -93,7 +95,7 @@
                             <h3 class="card__title">最大賠償<span class="u-txt-red">3,000万円</span></h3>
                             <figure class="card__thumbnail">
                                 <div class="card__thumbnail__img">
-                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/point_05.png') ); ?>" alt="イメージ画像">
+                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/point_05.png') ); ?>" alt="イメージイラスト">
                                 </div>
                                 <figcaption>最大賠償3,000万円補償いたします。
                                     万が一のことが起きても補償付きなので安心です。</figcaption>
@@ -104,7 +106,7 @@
                             <h3 class="card__title"><span class="u-txt-red">女性も</span>安心</h3>
                             <figure class="card__thumbnail">
                                 <div class="card__thumbnail__img">
-                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/point_06.png') ); ?>" alt="イメージ画像">
+                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/point_06.png') ); ?>" alt="イメージイラスト">
                                 </div>
                                 <figcaption>当社サービスご利用の約70%が女性のお客様です。女性もご安心してご利用いただけます。</figcaption>
                             </figure>
@@ -117,7 +119,7 @@
 
             <section class="p-strengths">
                 <div class="p-section-title">
-                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イラスト">
+                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イメージキャラクター「エコわんくん」">
                     <hgroup class="title-group">
                         <p class="head">こんなに違う！</p>
                         <p class="lead">当社と他社さんを</p>
@@ -139,7 +141,7 @@
                                     <p class="title">当社の場合</p>
                                     <div class="detail">
                                         <div class="label">
-                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/character-face_01.png') ); ?>" alt="イラスト">
+                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/character-face_01.png') ); ?>" alt="">
                                             <p>パックプラン</p>
                                         </div>
                                         <p class="note">パックプランの料金に含まれています。</p>
@@ -160,11 +162,11 @@
                                         <p class="title">A社さんの場合</p>
                                         <div class="other-content__detail__point1">
                                             <div class="label">
-                                                <img src="<?php echo esc_url(get_theme_file_uri('/images/character-face_03.png') ); ?>" alt="イラスト">
+                                                <img src="<?php echo esc_url(get_theme_file_uri('/images/character-face_03.png') ); ?>" alt="">
                                                 <p>パックプラン</p>
                                             </div>
                                             <div class="mark">
-                                                <img src="<?php echo esc_url(get_theme_file_uri('/images/plus-mark.png') ); ?>" alt="+マーク">
+                                                <img src="<?php echo esc_url(get_theme_file_uri('/images/plus-mark.png') ); ?>" alt="プラス">
                                                 <p>追加費用発生</p>
                                             </div>
                                             <ul class="plan-item__container">
@@ -177,11 +179,11 @@
                                         <p class="title">B社さんの場合</p>
                                         <div class="other-content__detail__point1">
                                             <div class="label">
-                                                <img src="<?php echo esc_url(get_theme_file_uri('/images/character-face_03.png') ); ?>" alt="イラスト">
+                                                <img src="<?php echo esc_url(get_theme_file_uri('/images/character-face_03.png') ); ?>" alt="">
                                             <p>パックプラン</p>
                                             </div>
                                             <div class="mark">
-                                                <img src="<?php echo esc_url(get_theme_file_uri('/images/plus-mark.png') ); ?>" alt="+マーク">
+                                                <img src="<?php echo esc_url(get_theme_file_uri('/images/plus-mark.png') ); ?>" alt="プラス">
                                             <p>追加費用発生</p>
                                             </div>
                                             <ul class="plan-item__container">
@@ -205,11 +207,11 @@
                                     <div class="detail our-content__detail__point2">
                                         <div class="detail__top">
                                             <p>最短即日対応！</p>
-                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_01.png') ); ?>" alt="イメージ画像">
+                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_01.png') ); ?>" alt="イメージイラスト">
                                         </div>
                                         <div class="detail__under">
                                             <p>早朝でも深夜でもご相談対応！</p>
-                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_02.png') ); ?>" alt="イメージ画像">
+                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_02.png') ); ?>" alt="イメージイラスト">
                                         </div>
                                     </div>
                                 </div>
@@ -217,14 +219,14 @@
                                     <div class="content">
                                         <p class="title">A社さんの場合</p>
                                         <div class="other-content__detail__point2">
-                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_03.png') ); ?>" alt="イメージ画像">
+                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_03.png') ); ?>" alt="イメージイラスト">
                                             <p>すでに予約が埋まっていて回収日が先送りになってしまった。</p>
                                         </div>
                                     </div>
                                     <div class="content">
                                         <p class="title">B社さんの場合</p>
                                         <div class="other-content__detail__point2">
-                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_04.png') ); ?>" alt="イメージ画像">
+                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_04.png') ); ?>" alt="イメージイラスト">
                                             <p>営業時間外は受け付けていない。</p>
                                         </div>
                                     </div>
@@ -247,11 +249,11 @@
                                             <div class="unit-top">
                                                 <div class="left-unit">
                                                     <p>すべて自社スタッフ</p>
-                                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_05.png') ); ?>" alt="イメージ画像">
+                                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_05.png') ); ?>" alt="イメージイラスト">
                                                 </div>
                                                 <div class="right-unit">
                                                     <p>広告は口コミ、ご紹介</p>
-                                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_06.png') ); ?>" alt="イメージ画像">
+                                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_06.png') ); ?>" alt="イメージイラスト">
                                                 </div>
                                             </div>
                                         </div>
@@ -259,7 +261,7 @@
                                             <p class="detail__title">高価買取ができる理由</p>
                                             <div class="unit-under">
                                                 <p>国内販売に加え海外販売も対応</p>
-                                                <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_07.png') ); ?>" alt="イメージ画像">
+                                                <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_07.png') ); ?>" alt="イメージイラスト">
                                             </div>
                                         </div>
                                     </div>
@@ -268,14 +270,14 @@
                                     <div class="content">
                                         <p class="title">A社さんの場合</p>
                                         <div class="other-content__detail__point2">
-                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_08.png') ); ?>" alt="イメージ画像">
+                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_08.png') ); ?>" alt="イメージイラスト">
                                             <p>外注スタッフを手配しているため人件費がかかり、費用が高値になってしまう。</p>
                                         </div>
                                     </div>
                                     <div class="content">
                                         <p class="title">B社さんの場合</p>
                                         <div class="other-content__detail__point2">
-                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_09.png') ); ?>" alt="イメージ画像">
+                                            <img src="<?php echo esc_url(get_theme_file_uri('/images/hikaku_09.png') ); ?>" alt="イメージイラスト">
                                             <p>高額な広告費を使用しているため、高値になってしまう。</p>
                                         </div>
                                     </div>
@@ -296,7 +298,7 @@
 
             <section class="p-flow">
                 <div class="p-section-title">
-                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イラスト">
+                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イメージキャラクター「エコわんくん」">
                     <hgroup class="title-group">
                         <p class="head">最短即日対応！</p>
                         <p class="lead">ご相談からお見積りまで無料</p>
@@ -360,7 +362,7 @@
 
             <section class="p-service-list">
                 <div class="p-section-title">
-                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イラスト">
+                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イメージキャラクター「エコわんくん」">
                     <hgroup class="title-group">
                         <p class="head">柔軟に対応！</p>
                         <p class="lead">こんな場面でお役立て下さい</p>
@@ -393,7 +395,7 @@
 
             <section class="p-trouble">
                 <div class="p-section-title">
-                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_02.png') ); ?>" alt="イラスト">
+                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_02.png') ); ?>" alt="イメージキャラクター「エコわんくん」">
                     <hgroup class="title-group">
                         <p class="head">必ずチェック！</p>
                         <p class="lead">不用品回収でよくある</p>
@@ -427,7 +429,7 @@
 
             <section class="p-response">
                 <div class="p-section-title">
-                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イラスト">
+                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イメージキャラクター「エコわんくん」">
                     <hgroup class="title-group">
                         <p class="head">喜びの声続々！</p>
                         <p class="lead">利用されたお客様の声を紹介</p>
@@ -530,7 +532,7 @@
 
             <section class="p-works" id="works-section">
                 <div class="p-section-title">
-                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イラスト">
+                    <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イメージキャラクター「エコわんくん」">
                     <hgroup class="title-group">
                         <p class="head">実績多数！</p>
                         <p class="lead">当社の不用品回収サービス</p>
@@ -545,19 +547,19 @@
                                 <div class="before">
                                     <p class="head">BEFORE</p>
                                     <div class="img-container">
-                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/case1_before.jpg') ); ?>" alt="ビフォア画像">
+                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/case1_before.jpg') ); ?>" alt="回収前の不用品でいっぱいの部屋">
                                     </div>
                                 </div>
                                 <div class="after">
                                     <p class="head">AFTER</p>
                                     <div class="img-container">
-                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/case1_after.jpg') ); ?>" alt="アフター画像">
+                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/case1_after.jpg') ); ?>" alt="回収後の綺麗に片付いた部屋">
                                     </div>
                                 </div>
                             </div>
                             <div class="review">
                                 <div class="img-container">
-                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/character_06.png') ); ?>" alt="イメージキャラクター">
+                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/character_06.png') ); ?>" alt="">
                                 </div>
                                 <p>高齢の親御様が長年住まわれていたご実家の片付けをご依頼いただきました。リビングには思い出の詰まった家具や雑貨が数多くあり、丁寧に扱いながら回収作業を心がけました。お客様のご希望で、大切な品物を確認しながら不要品を分別しながら作業を進めさせていただきました。</p>
                             </div>
@@ -568,19 +570,19 @@
                                 <div class="before">
                                     <p class="head">BEFORE</p>
                                     <div class="img-container">
-                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/case2_before.jpg') ); ?>" alt="ビフォア画像">
+                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/case2_before.jpg') ); ?>" alt="不要になった大きな家具">
                                     </div>
                                 </div>
                                 <div class="after">
                                     <p class="head">AFTER</p>
                                     <div class="img-container">
-                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/case2_after.jpg') ); ?>" alt="アフター画像">
+                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/case2_after.jpg') ); ?>" alt="回収後のスッキリした部屋">
                                     </div>
                                 </div>
                             </div>
                             <div class="review">
                                 <div class="img-container">
-                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/character_06.png') ); ?>" alt="イメージキャラクター">
+                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/character_06.png') ); ?>" alt="">
                                 </div>
                                 <p>お客様から大きな棚の廃棄に関するご依頼を受けました。新しい家具の購入に伴い、古くなった大きな棚をどうにかしなければならなくなったとのことでした。大きくて重たい家具の搬出は、壁や床を傷つけないよう特に注意が必要です。家具を安全に運び出すための適切な機材と技術を駆使して棚を運び出しました。</p>
                             </div>
@@ -591,19 +593,19 @@
                                 <div class="before">
                                     <p class="head">BEFORE</p>
                                     <div class="img-container">
-                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/case3_before.jpg') ); ?>" alt="ビフォア画像">
+                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/case3_before.jpg') ); ?>" alt="回収前の不用品でいっぱいの部屋">
                                     </div>
                                 </div>
                                 <div class="after">
                                     <p class="head">AFTER</p>
                                     <div class="img-container">
-                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/case3_after.jpg') ); ?>" alt="アフター画像">
+                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/case3_after.jpg') ); ?>" alt="回収後の綺麗に片付いた部屋">
                                     </div>
                                 </div>
                             </div>
                             <div class="review">
                                 <div class="img-container">
-                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/character_06.png') ); ?>" alt="イメージキャラクター">
+                                    <img src="<?php echo esc_url(get_theme_file_uri('/images/character_06.png') ); ?>" alt="">
                                 </div>
                                 <p>退去日が迫っているにも関わらず、引越し準備が進んでいないお客様からの緊急のご依頼がありました。時間が非常に限られている状況だったので、即日で対応させていただきました。</p>
                             </div>

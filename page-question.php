@@ -2,7 +2,7 @@
             
     <section class="p-question">
         <div class="p-section-title">
-            <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イラスト">
+            <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イメージキャラクター「エコわんくん」">
             <hgroup class="title-group">
                 <p class="head">疑問を解決！</p>
                 <p class="lead">不用品回収について</p>
@@ -15,25 +15,25 @@
             <div class="category-menu">
                 <div class="menu__title">
                     <a href="#service">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/images/arrow-icon.png') ); ?>" alt="矢印アイコン">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/images/arrow-icon.png') ); ?>" alt="">
                         <p>サービス内容について</p>
                     </a>
                 </div>
                 <div class="menu__title">
                     <a href="#price">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/images/arrow-icon.png') ); ?>" alt="矢印アイコン">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/images/arrow-icon.png') ); ?>" alt="">
                         <p>料金について</p>
                     </a>
                 </div>
                 <div class="menu__title">
                     <a href="#request">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/images/arrow-icon.png') ); ?>" alt="矢印アイコン">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/images/arrow-icon.png') ); ?>" alt="">
                         <p>お申し込みについて</p>
                     </a>
                 </div>
                 <div class="menu__title">
                     <a href="#others">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/images/arrow-icon.png') ); ?>" alt="矢印アイコン">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/images/arrow-icon.png') ); ?>" alt="">
                         <p>その他</p>
                     </a>
                 </div>

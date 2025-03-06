@@ -1,5 +1,5 @@
 <div class="c-link-btn__line--narrow">
-    <a href="">
+    <a href="" aria-label="LINEのアカウントへ" role="button">
         <div class="head">
             <img class="icon" src="<?php echo esc_url(get_theme_file_uri('/images/line-icon.png') ); ?>" alt="LINEアイコン">
             <p class="title">LINE<br>お友達登録</p>

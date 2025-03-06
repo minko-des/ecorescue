@@ -11,6 +11,9 @@
     .content-area {
         background-color: rgba( 245, 224, 69, 0.1);
         padding-bottom: 20px;
+        @include var.breakpoint(tablet) {
+            padding-bottom: 40px;
+        }
         
         .article-wrap {
             display: flex;

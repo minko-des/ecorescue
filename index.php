@@ -561,7 +561,7 @@
                             <picture class="packplan-card">
                                 <source srcset="./images/packcard-3l.png" media="(min-width: 768px)">
                                 <img src="./images/packcard-3l_sp.png" alt="パックプラン3L">
-                            </picture>
+                            </picture> -->
                             
 
                             <!-- <li class="p-packplan-card">

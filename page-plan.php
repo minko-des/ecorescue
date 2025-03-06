@@ -6,7 +6,7 @@
     
     <section class="p-buy-service">
         <div class="p-section-title">
-            <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イラスト">
+            <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イメージキャラクター「エコわんくん」">
             <hgroup class="title-group">
                 <p class="head">高価買取も！</p>
                 <p class="lead">回収料金からお値引きが可能な</p>
@@ -23,21 +23,21 @@
                     <div class="category">
                         <p class="title">冷蔵庫</p>
                         <div class="detail">
-                            <img src="<?php echo esc_url(get_theme_file_uri('/images/trade_01.png') ); ?>" alt="イメージ画像">
+                            <img src="<?php echo esc_url(get_theme_file_uri('/images/trade_01.png') ); ?>" alt="冷蔵庫のイメージ画像">
                             <p>2ドアタイプの冷蔵庫、3ドアタイプの冷蔵庫、4ドアタイプの冷蔵庫など</p>
                         </div>
                     </div>
                     <div class="category">
                         <p class="title">洗濯機</p>
                         <div class="detail">
-                            <img src="<?php echo esc_url(get_theme_file_uri('/images/trade_02.png') ); ?>" alt="イメージ画像">
+                            <img src="<?php echo esc_url(get_theme_file_uri('/images/trade_02.png') ); ?>" alt="洗濯機のイメージ画像">
                             <p>縦型式の洗濯機、ドラム式の洗濯機など（業務用を除く）</p>
                         </div>
                     </div>
                     <div class="category">
                         <p class="title">生活家電製品</p>
                         <div class="detail">
-                            <img src="<?php echo esc_url(get_theme_file_uri('/images/trade_03.png') ); ?>" alt="イメージ画像">
+                            <img src="<?php echo esc_url(get_theme_file_uri('/images/trade_03.png') ); ?>" alt="生活家電製品のイメージ画像">
                             <p>液晶テレビ、エアコン、電子レンジ、DVDプレイヤーなど</p>
                         </div>
                     </div>

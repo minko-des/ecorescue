@@ -2,7 +2,7 @@
             
     <section class="p-contact-form">
         <div class="p-section-title">
-            <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イラスト">
+            <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イメージキャラクター「エコわんくん」">
             <hgroup class="title-group">
                 <p class="head">まずは無料相談！</p>
                 <p class="lead">不用品回収に関する</p>

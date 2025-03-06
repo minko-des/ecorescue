@@ -1,6 +1,6 @@
 <section class="p-plan-contrast">
     <div class="p-section-title">
-        <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イラスト">
+        <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イメージキャラクター「エコわんくん」">
         <hgroup class="title-group">
             <p class="head">違いを解説！</p>
             <p class="lead">他社「積み放題プラン」と<br>当社「パックプラン」の</p>

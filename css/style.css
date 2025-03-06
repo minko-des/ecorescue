@@ -1082,6 +1082,7 @@ ul, ol {
   background-color: #E83A17;
   border-radius: 10px 10px 0 0;
   font-family: "M PLUS Rounded 1c", serif;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -1249,6 +1250,7 @@ ul, ol {
   width: 340px;
   padding-top: 24px;
   margin: 0 auto;
+  font-size: 0;
 }
 @media (min-width: 768px) {
   .p-campaign h2 {
@@ -1548,6 +1550,11 @@ ul, ol {
 .p-strengths .content-area {
   background-color: rgba(245, 224, 69, 0.1);
   padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .p-strengths .content-area {
+    padding-bottom: 40px;
+  }
 }
 .p-strengths .content-area .article-wrap {
   display: flex;
@@ -2498,6 +2505,7 @@ ul, ol {
 }
 .p-plan-contrast .content-area .article-wrap .plan-contrast__article .content-row .other-content .detail {
   width: 100%;
+  height: auto;
   background-color: #fff;
   border: 2px solid #454A47;
   border-radius: 0 0 20px 20px;
@@ -2506,6 +2514,11 @@ ul, ol {
   align-items: center;
   gap: 10px;
   padding: 16px 20px;
+}
+@media (min-width: 768px) {
+  .p-plan-contrast .content-area .article-wrap .plan-contrast__article .content-row .other-content .detail {
+    height: 523px;
+  }
 }
 @media (min-width: 1100px) {
   .p-plan-contrast .content-area .article-wrap .plan-contrast__article .content-row .other-content .detail {
@@ -3912,13 +3925,9 @@ ul, ol {
   }
 }
 .p-privacypolicy .content-area .article-wrap .article__item .title {
+  font-size: 2rem;
   font-weight: 700;
   color: #3BAE41;
-}
-@media (min-width: 768px) {
-  .p-privacypolicy .content-area .article-wrap .article__item .title {
-    font-size: 2rem;
-  }
 }
 .p-privacypolicy .content-area .article-wrap .article__item .text {
   font-size: 1.6rem;
@@ -4091,7 +4100,7 @@ ul, ol {
   font-weight: 700;
 }
 .p-page404__title h2 {
-  font-size: clamp(6rem, 0.1vw, 12rem);
+  font-size: clamp(6rem, 10vw, 12rem);
 }
 .p-page404__title p {
   font-size: 2.4rem;

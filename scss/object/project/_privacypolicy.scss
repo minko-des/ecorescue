@@ -48,11 +48,9 @@
             .article__item {
 
                 .title {
+                    font-size: 2.0rem;
                     font-weight: 700;
                     color: var.$green;
-                    @include var.breakpoint(tablet) {
-                        font-size: 2rem;
-                    }
                 }
                 .text {
                     font-size: 1.6rem;

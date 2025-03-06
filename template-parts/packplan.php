@@ -1,6 +1,6 @@
 <section class="p-packplan" id="packplan-section">
     <div class="p-section-title">
-        <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イラスト">
+        <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イメージキャラクター「エコわんくん」">
         <hgroup class="title-group">
             <p class="head">料金紹介！</p>
             <p class="lead">お客様一人一人に合った<br>最適なプランをご提案</p>
@@ -25,7 +25,7 @@
                     <li class="c-plan-item">分別作業費</li>
                 </ul>
                 <div class="label">
-                    <img src="./images/character-face_01.png" alt="">
+                    <img src="<?php echo esc_url(get_theme_file_uri('/images/character-face_01.png') ); ?>" alt="">
                     <p>大変な分別作業や梱包もまるっとお任せ！</p>
                 </div>
             </div>
@@ -36,27 +36,27 @@
             <div class="packplan-card__container">
                 <picture class="packplan-card">
                     <source srcset="<?php echo esc_url(get_theme_file_uri('/images/packcard-ss.png') ); ?>" media="(min-width: 768px)">
-                    <img src="<?php echo esc_url(get_theme_file_uri('/images/packcard-ss_sp.png') ); ?>" alt="パックプランSS">
+                    <img src="<?php echo esc_url(get_theme_file_uri('/images/packcard-ss_sp.png') ); ?>" alt="SSパック ちょっとしたお部屋の整理に 10000円~">
                 </picture>
                 <picture class="packplan-card">
                     <source srcset="<?php echo esc_url(get_theme_file_uri('/images/packcard-s.png') ); ?>" media="(min-width: 768px)">
-                    <img src="<?php echo esc_url(get_theme_file_uri('/images/packcard-s_sp.png') ); ?>" alt="パックプランS">
+                    <img src="<?php echo esc_url(get_theme_file_uri('/images/packcard-s_sp.png') ); ?>" alt="Sパック 1人暮らし程度のお片付けに 15000円~">
                 </picture>
                 <picture class="packplan-card">
                     <source srcset="<?php echo esc_url(get_theme_file_uri('/images/packcard-m.png') ); ?>" media="(min-width: 768px)">
-                    <img src="<?php echo esc_url(get_theme_file_uri('/images/packcard-m_sp.png') ); ?>" alt="パックプランM">
+                    <img src="<?php echo esc_url(get_theme_file_uri('/images/packcard-m_sp.png') ); ?>" alt="Mパック 1人暮らしのお部屋に 30000円~">
                 </picture>
                 <picture class="packplan-card">
                     <source srcset="<?php echo esc_url(get_theme_file_uri('/images/packcard-l.png') ); ?>" media="(min-width: 768px)">
-                    <img src="<?php echo esc_url(get_theme_file_uri('/images/packcard-l_sp.png') ); ?>" alt="パックプランL">
+                    <img src="<?php echo esc_url(get_theme_file_uri('/images/packcard-l_sp.png') ); ?>" alt="Lパック ご家族のお引越し等に 70000円~">
                 </picture>
                 <picture class="packplan-card">
                     <source srcset="<?php echo esc_url(get_theme_file_uri('/images/packcard-ll.png') ); ?>" media="(min-width: 768px)">
-                    <img src="<?php echo esc_url(get_theme_file_uri('/images/packcard-ll_sp.png') ); ?>" alt="パックプランLL">
+                    <img src="<?php echo esc_url(get_theme_file_uri('/images/packcard-ll_sp.png') ); ?>" alt="LLパック ご家族のお引越し等に 150000円~">
                 </picture>
                 <picture class="packplan-card">
                     <source srcset="<?php echo esc_url(get_theme_file_uri('/images/packcard-3l.png') ); ?>" media="(min-width: 768px)">
-                    <img src="<?php echo esc_url(get_theme_file_uri('/images/packcard-3l_sp.png') ); ?>" alt="パックプラン3L">
+                    <img src="<?php echo esc_url(get_theme_file_uri('/images/packcard-3l_sp.png') ); ?>" alt="3Lパック 遺品整理、一軒家、ゴミ屋敷に お見積り 要相談">
                 </picture>
             </div>
         </div>
@@ -64,7 +64,7 @@
         <div class="packplan__custom">
             <div class="packplan__custom__head">
                 <div class="label">
-                    <img src="<?php echo esc_url(get_theme_file_uri('/images/character-face_01.png') ); ?>" alt="イラスト">
+                    <img src="<?php echo esc_url(get_theme_file_uri('/images/character-face_01.png') ); ?>" alt="">
                     <p>注目ポイント！</p>
                 </div>
                 <p class="text">お客様のお荷物量によって<span class="u-txt-red u-nowrap">最適な料金</span>をご案内します。</p>

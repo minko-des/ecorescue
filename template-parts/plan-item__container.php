@@ -1,5 +1,5 @@
 <div class="label">
-    <img src="<?php echo esc_url(get_theme_file_uri('/images/character-face_01.png') ); ?>" alt="イラスト">
+    <img src="<?php echo esc_url(get_theme_file_uri('/images/character-face_01.png') ); ?>" alt="">
     <p>エコレスキューのパックは<br><span class="u-txt-red">これらのオプション料金コミコミ！</span></p>
 </div>
 <ul class="plan-item__container">

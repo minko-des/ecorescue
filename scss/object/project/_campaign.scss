@@ -22,6 +22,7 @@
         width: 340px;
         padding-top: 24px;
         margin: 0 auto;
+        font-size: 0;
         @include var.breakpoint(tablet) {
             width: 545px;
         }

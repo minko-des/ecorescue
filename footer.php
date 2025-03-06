@@ -20,12 +20,12 @@
                         <div class="info">
                             <p class="title">お問合せ・お見積り <span class="u-nowrap">２４時間３６５日いつでも受付中です</span></p>
                             <div class="freedial">
-                                <img src="<?php echo esc_url(get_theme_file_uri('/images/freedial.png') ); ?>" alt="フリーダイヤルアイコン">
+                                <img src="<?php echo esc_url(get_theme_file_uri('/images/freedial.png') ); ?>" alt="フリーダイヤル">
                                 <p class="tel">0120-012-345</p>
                             </div>
                             <div class="creditcard">
                                 <p class="lead">現金払いはもちろん、各種クレジットカードがご利用いただけます</p>
-                                <img src="<?php echo esc_url(get_theme_file_uri('/images/card-corp.png') ); ?>" alt="クレカアイコン">
+                                <img src="<?php echo esc_url(get_theme_file_uri('/images/card-corp.png') ); ?>" alt="Visa,Mastercard,JCB,American Express,Diners Club,Discover">
                             </div>
                         </div>
                     </div>                    

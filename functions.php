@@ -9,7 +9,7 @@ function custom_theme_support() {
         'caption',
     ) );
     add_theme_support( 'post-thumbnails' );  //投稿ページでアイキャッチ画像を扱えるようにする
-    //add_theme_support( 'title-tag' );        //テーマにタイトルタグのサポートを許可する
+    add_theme_support( 'title-tag' );        //テーマにタイトルタグのサポートを許可する
     add_theme_support( 'wp-block-styles' );
     add_theme_support( 'responsive-embeds' );
     add_theme_support( 'custom-logo', array(
