@@ -6,8 +6,8 @@
             <div class="freedial-area">
                 <p class="freedial-area__head u-nowrap">お急ぎの場合はお電話にてお問合せ下さい</p>
                 <div class="freedial">
-                    <img src="<?php echo esc_url(get_theme_file_uri('/images/freedial.png') ); ?>" alt="フリーダイヤル">
-                    <p class="tel"><span class="u-nowrap">0120-012-345</span></p>
+                    <img src="<?php echo esc_url(get_theme_file_uri('/images/phone.png') ); ?>" alt="フリーダイヤル">
+                    <p class="tel"><span class="u-nowrap">080-7848-7520</span></p>
                 </div>
                 <p class="freedial-area__lead"><span class="undermarker">不用品１点</span>から<span class="undermarker">ゴミ屋敷</span>まで<span class="u-nowrap">対応します。</span></p>
             </div>
@@ -23,12 +23,13 @@
                 </a>
             </div>
             <div class="js-link-btn__line">
-                <a href="" aria-label="LINEのアカウントへ" role="button">
-                <div class="head">
-                    <img class="icon" src="<?php echo esc_url(get_theme_file_uri('/images/line-icon.png') ); ?>" alt="LINEアイコン">
-                    <p class="title">LINE<span class="u-nowrap">お友達登録</span></p>
-                </div>
-                <p class="lead">24時間365日受付</p>
+                <a href="https://lin.ee/4LK4LBq" target="_blank" rel="noopener" aria-label="LINEのアカウントへ" role="button">
+                    <div class="head">
+                        <img class="icon" src="<?php echo esc_url(get_theme_file_uri('/images/line-icon.png') ); ?>" alt="LINEアイコン">
+                        <p class="title">LINE<span class="u-nowrap">お友達登録</span></p>
+                    </div>
+                    <p class="lead">24時間365日受付</p>
+                </a>
             </div>
         </div>
     </div>

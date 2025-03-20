@@ -3,24 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "<?php bloginfo('name'); ?>",
-        "url": "<?php echo home_url(); ?>",
-        "publisher": {
-            "@type": "Organization",
-            "name": "<?php bloginfo('name'); ?>",
-            "logo": {
-            "@type": "ImageObject",
-            "url": "<?php echo esc_url(get_theme_file_uri('/images/logo.png')); ?>"
-            }
-        }
-        }
-    </script>
-
+    <meta name="format-detection" content="telephone=no">
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -39,8 +22,8 @@
                             <div class="freedial-banner">
                                 <div class="freedial-area">
                                     <div class="freedial">
-                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/freedial.png') ); ?>" alt="フリーダイヤル">
-                                        <p class="tel">0120-012-345</p>
+                                        <img src="<?php echo esc_url(get_theme_file_uri('/images/phone.png') ); ?>" alt="フリーダイヤル">
+                                        <p class="tel">080-7848-7520</p>
                                     </div>
                                     <p>ご相談お見積り無料・24時間365日受付中</p>
                                 </div>

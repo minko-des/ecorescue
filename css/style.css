@@ -1153,7 +1153,7 @@ ul, ol {
 }
 .p-contact-banner .banner-content .main-info .freedial-area .freedial {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 8px;
 }
 @media (min-width: 768px) {
@@ -1166,7 +1166,7 @@ ul, ol {
 }
 @media (min-width: 768px) {
   .p-contact-banner .banner-content .main-info .freedial-area .freedial img {
-    width: 65px;
+    width: 58px;
   }
 }
 .p-contact-banner .banner-content .main-info .freedial-area .freedial .tel {

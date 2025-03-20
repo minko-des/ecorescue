@@ -86,7 +86,8 @@
 
                 .freedial {
                     display: flex;
-                    align-items: flex-end;
+                    // align-items: flex-end;
+                    align-items: center;
                     gap: 8px;
                     @include var.breakpoint(tablet) {
                         gap: 14px;
@@ -95,7 +96,8 @@
                     img {
                         width: 40px;
                         @include var.breakpoint(tablet) {
-                            width: 65px;
+                            // width: 65px;
+                            width: 58px;
                         }
                     }
 

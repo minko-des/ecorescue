@@ -37,29 +37,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const currentText = hamburgerBtn.textContent;
         hamburgerBtn.textContent = currentText == "close" ? "menu" : "close";
-        
     });
-
-
-    // メニューページ表示非表示関数
-    // const menuBtn = document.querySelector(".c-menu-btn");
-    // const sideBar = document.querySelector(".p-sidebar");
-
-    // menuBtn.addEventListener("click" , () => {
-    //     const currentText = menuBtn.textContent;
-    //     menuBtn.textContent = currentText === "CLOSE" ? "MENU" : "CLOSE";
-    //     sideBar.classList.toggle("menuOpen");
-
-    //     toggleBodyScroll();
-    // });
-
-    // function toggleBodyScroll() {
-    //     if (sideBar.classList.contains("menuOpen")) {
-    //         document.body.classList.add("u-noScroll");
-    //     } else {
-    //         document.body.classList.remove("u-noScroll");
-    //     }
-    // }
-
-
 });
