@@ -1,7 +1,7 @@
-=== ecorescue ===
+=== eco-one ===
 Contributors: minko
 Tags: responsive
-Requires at least: 6.6
+Requires at least: 6.7
 Tested up to: 6.7	
 Version: 1.0
 License: GPL
