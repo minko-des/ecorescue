@@ -350,6 +350,12 @@ ul, ol {
 
 .l-footer {
   width: 100%;
+  padding-bottom: 118px;
+}
+@media (min-width: 768px) {
+  .l-footer {
+    padding: 0;
+  }
 }
 
 .l-wrapper {
@@ -384,7 +390,7 @@ ul, ol {
 }
 
 .l-main {
-  padding-top: 88px;
+  padding-top: 72px;
 }
 @media (min-width: 768px) {
   .l-main {
@@ -730,61 +736,6 @@ ul, ol {
   opacity: 0.6;
 }
 
-.p-logo-title {
-  transition: 0.3s;
-  height: 50px;
-}
-@media (min-width: 768px) {
-  .p-logo-title {
-    height: auto;
-  }
-}
-.p-logo-title a {
-  display: inline-block;
-}
-.p-logo-title a .logo-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.p-logo-title a .logo-head p {
-  font-family: "M PLUS Rounded 1c", serif;
-  font-size: 1rem;
-  padding-bottom: 6px;
-  white-space: nowrap;
-}
-@media (min-width: 768px) {
-  .p-logo-title a .logo-head p {
-    font-size: 1.6rem;
-  }
-}
-.p-logo-title a .logo-head img {
-  width: 34px;
-}
-@media (min-width: 768px) {
-  .p-logo-title a .logo-head img {
-    width: 50px;
-  }
-}
-.p-logo-title a .logo-name {
-  font-family: "M PLUS Rounded 1c", serif;
-  font-size: 1.5rem;
-  font-weight: 800;
-  white-space: nowrap;
-}
-.p-logo-title a .logo-name span {
-  color: #3BAE41;
-}
-@media (min-width: 768px) {
-  .p-logo-title a .logo-name {
-    font-size: 2.4rem;
-  }
-}
-
-.p-logo-title:hover {
-  opacity: 0.7;
-}
-
 .p-footer {
   width: 94%;
   max-width: 1200px;
@@ -925,12 +876,12 @@ ul, ol {
     width: 56px;
   }
 }
-.p-footer .footer__contact-group .info .freedial .tel {
+.p-footer .footer__contact-group .info .freedial .tel-link .tel {
   font-size: 3.2rem;
   color: #E83A17;
 }
 @media (min-width: 1100px) {
-  .p-footer .footer__contact-group .info .freedial .tel {
+  .p-footer .footer__contact-group .info .freedial .tel-link .tel {
     font-size: 4rem;
   }
 }
@@ -967,12 +918,13 @@ ul, ol {
 
 .p-header {
   width: 93%;
+  height: 72px;
   margin: 0 auto;
-  padding: 20px 0 18px 0;
+  padding-top: 12px;
 }
 @media (min-width: 768px) {
   .p-header {
-    padding: 20px 0 8px 0;
+    height: 156px;
   }
 }
 @media (min-width: 1100px) {
@@ -1016,7 +968,7 @@ ul, ol {
   width: 38px;
   height: 34px;
 }
-.p-header .header-top .banner-group .freedial-banner .freedial-area .freedial .tel {
+.p-header .header-top .banner-group .freedial-banner .freedial-area .freedial .tel-link .tel {
   font-size: 3rem;
   font-weight: 500;
   color: black;
@@ -1169,14 +1121,14 @@ ul, ol {
     width: 58px;
   }
 }
-.p-contact-banner .banner-content .main-info .freedial-area .freedial .tel {
+.p-contact-banner .banner-content .main-info .freedial-area .freedial .tel-link .tel {
   font-size: clamp(2.8rem, 7.5vw, 3.4rem);
   font-weight: 600;
   color: #E83A17;
   border: none;
 }
 @media (min-width: 768px) {
-  .p-contact-banner .banner-content .main-info .freedial-area .freedial .tel {
+  .p-contact-banner .banner-content .main-info .freedial-area .freedial .tel-link .tel {
     font-size: 4.6rem;
     font-weight: 600;
   }
@@ -3438,7 +3390,7 @@ ul, ol {
 }
 
 .p-sidebar__nav {
-  padding-top: 140px;
+  padding-top: 120px;
   padding-left: 40px;
 }
 .p-sidebar__nav .nav-menu {
@@ -4131,6 +4083,167 @@ ul, ol {
   opacity: 0.6;
 }
 
+.p-cta-banner {
+  width: 100%;
+  min-width: 340px;
+  padding-top: 2px;
+  padding-bottom: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 90;
+}
+@media (min-width: 768px) {
+  .p-cta-banner {
+    display: none;
+  }
+}
+.p-cta-banner .heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.p-cta-banner .heading img {
+  width: 32px;
+}
+.p-cta-banner .heading p {
+  font-family: "M PLUS Rounded 1c", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.p-cta-banner .banner-wrap {
+  width: 97%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.p-cta-banner .banner-wrap .freedial-banner {
+  width: 63%;
+  height: 68px;
+  background-color: #E83A17;
+  border-radius: 4px;
+}
+.p-cta-banner .banner-wrap .freedial-banner .tel-link {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.p-cta-banner .banner-wrap .freedial-banner .tel-link .freedial {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.p-cta-banner .banner-wrap .freedial-banner .tel-link .freedial img {
+  width: 25px;
+}
+.p-cta-banner .banner-wrap .freedial-banner .tel-link .freedial .tel {
+  font-size: clamp(2.4rem, 6.8vw, 3rem);
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+}
+.p-cta-banner .banner-wrap .freedial-banner .tel-link p {
+  font-size: 1.5rem;
+  color: white;
+  white-space: nowrap;
+}
+.p-cta-banner .banner-wrap .freedial-banner .tel-link p span {
+  font-weight: 700;
+  color: #F5E045;
+}
+.p-cta-banner .banner-wrap .link-btn__group {
+  width: 34%;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+.p-cta-banner .banner-wrap .link-btn__group .link-btn__contact, .p-cta-banner .banner-wrap .link-btn__group .link-btn__line {
+  width: 48.4%;
+  height: 76px;
+  border-radius: 4px;
+}
+.p-cta-banner .banner-wrap .link-btn__group .link-btn__contact .content, .p-cta-banner .banner-wrap .link-btn__group .link-btn__line .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.p-cta-banner .banner-wrap .link-btn__group .link-btn__contact .content .icon, .p-cta-banner .banner-wrap .link-btn__group .link-btn__line .content .icon {
+  width: 36px;
+  min-width: 0;
+  min-height: 0;
+}
+.p-cta-banner .banner-wrap .link-btn__group .link-btn__contact .content .title, .p-cta-banner .banner-wrap .link-btn__group .link-btn__line .content .title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  line-height: 1.2;
+}
+.p-cta-banner .banner-wrap .link-btn__group .link-btn__contact {
+  background-color: #FE7C2B;
+}
+.p-cta-banner .banner-wrap .link-btn__group .link-btn__line {
+  background-color: #3BAE41;
+}
+
+.p-site-title {
+  transition: 0.3s;
+}
+.p-site-title a p {
+  font-family: "M PLUS Rounded 1c", serif;
+  font-size: 1rem;
+  white-space: nowrap;
+  position: relative;
+  top: 6px;
+}
+@media (min-width: 768px) {
+  .p-site-title a p {
+    font-size: 1.5rem;
+    top: 8px;
+  }
+}
+.p-site-title a .site-logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+}
+@media (min-width: 768px) {
+  .p-site-title a .site-logo {
+    gap: 8px;
+  }
+}
+.p-site-title a .site-logo__name {
+  width: 130px;
+}
+@media (min-width: 768px) {
+  .p-site-title a .site-logo__name {
+    width: 196px;
+  }
+}
+.p-site-title a .site-logo__image {
+  width: 34px;
+}
+@media (min-width: 768px) {
+  .p-site-title a .site-logo__image {
+    width: 50px;
+  }
+}
+
+.p-site-title:hover {
+  opacity: 0.7;
+}
+
 .u-txt-red {
   color: #E83A17;
 }
@@ -4141,5 +4254,17 @@ ul, ol {
 
 .u-open-menu {
   top: 0;
+}
+
+.u-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 /*# sourceMappingURL=style.css.map */

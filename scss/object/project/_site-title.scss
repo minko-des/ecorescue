@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@use "../../foundation/variables" as var;
+
+
+.p-site-title {
+    transition: 0.3s;
+    
+    a {
+        p {
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 1rem;
+            white-space: nowrap;
+            position: relative;
+            top: 6px;
+            @include var.breakpoint(tablet) {
+                font-size: 1.5rem;
+                top: 8px;
+            }
+        }
+        .site-logo {
+            display: flex;
+            align-items: flex-end;
+            gap: 6px;
+            @include var.breakpoint(tablet) {
+                gap: 8px;
+            }
+            
+            &__name {
+                width: 130px;
+                @include var.breakpoint(tablet) {
+                    width: 196px;
+                }
+            }
+
+            &__image {
+                width: 34px;
+                @include var.breakpoint(tablet) {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+
+.p-site-title:hover {
+    opacity: 0.7;
+}

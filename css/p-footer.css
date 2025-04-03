@@ -138,12 +138,12 @@
     width: 56px;
   }
 }
-.p-footer .footer__contact-group .info .freedial .tel {
+.p-footer .footer__contact-group .info .freedial .tel-link .tel {
   font-size: 3.2rem;
   color: #E83A17;
 }
 @media (min-width: 1100px) {
-  .p-footer .footer__contact-group .info .freedial .tel {
+  .p-footer .footer__contact-group .info .freedial .tel-link .tel {
     font-size: 4rem;
   }
 }

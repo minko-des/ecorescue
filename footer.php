@@ -1,7 +1,7 @@
             <footer class="l-footer">
                 <div class="p-footer">
                     <div class="footer__navigation">
-                        <?php get_template_part('template-parts/logo-title'); ?>
+                        <?php get_template_part('template-parts/site-title'); ?>
                         <nav class="footer__nav">
                             <?php
                                 wp_nav_menu(array(
@@ -21,7 +21,9 @@
                             <p class="title">お問合せ・お見積り <span class="u-nowrap">２４時間３６５日いつでも受付中です</span></p>
                             <div class="freedial">
                                 <img src="<?php echo esc_url(get_theme_file_uri('/images/phone.png') ); ?>" alt="フリーダイヤル">
-                                <p class="tel">080-7848-7520</p>
+                                <a class="tel-link" href="tel:080-7848-7520">
+                                    <p class="tel">080-7848-7520</p>
+                                </a>
                             </div>
                             <div class="creditcard">
                                 <p class="lead">現金払いはもちろん、各種クレジットカードがご利用いただけます</p>
@@ -31,9 +33,12 @@
                     </div>                    
                 </div>
                 <div class="p-copyright">
-                    <small class="copy">© 2025 不用品回収エコレスキュー All Rights Reserved.</small>
+                    <small class="copy">© 2025 不用品回収エコワン All Rights Reserved.</small>
                 </div>
             </footer>
+
+            <?php get_template_part('template-parts/cta-banner'); ?>
+
         </main>
     </div>
     <?php wp_footer(); ?>

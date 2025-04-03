@@ -7,7 +7,9 @@
                 <p class="freedial-area__head u-nowrap">お急ぎの場合はお電話にてお問合せ下さい</p>
                 <div class="freedial">
                     <img src="<?php echo esc_url(get_theme_file_uri('/images/phone.png') ); ?>" alt="フリーダイヤル">
-                    <p class="tel"><span class="u-nowrap">080-7848-7520</span></p>
+                    <a class="tel-link" href="tel:080-7848-7520">
+                        <p class="tel"><span class="u-nowrap">080-7848-7520</span></p>
+                    </a>
                 </div>
                 <p class="freedial-area__lead"><span class="undermarker">不用品１点</span>から<span class="undermarker">ゴミ屋敷</span>まで<span class="u-nowrap">対応します。</span></p>
             </div>

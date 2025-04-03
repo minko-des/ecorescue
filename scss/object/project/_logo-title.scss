@@ -42,6 +42,22 @@
             span {
                 color: var.$green;
             }
+            .en {
+                font-size: 1.6rem;
+                letter-spacing: -0.3rem;
+                vertical-align: middle;
+                margin-left: 0.2rem;
+                margin-right: 0.4rem;
+                @include var.breakpoint(tablet) {
+                    font-size: 2.5rem;
+                    letter-spacing: -0.4rem;
+                    margin-left: 0.3rem;
+                    margin-right: 0.5rem;
+                }
+            }
+            .jn {
+                letter-spacing: 0.1rem;
+            }
             @include var.breakpoint(tablet) {
                 font-size: 2.4rem;
             }

@@ -23,7 +23,7 @@
 //object_project
 @use "object/project/main-visual";
 @use "object/project/header__nav";
-@use "object/project/logo-title";
+// @use "object/project/logo-title";
 @use "object/project/p-footer";
 @use "object/project/p-header";
 @use "object/project/contact-banner";
@@ -49,8 +49,11 @@
 @use "object/project/privacypolicy";
 @use "object/project/contact-form";
 @use "object/project/page404";
+@use "object/project/cta-banner";
+@use "object/project/site-title";
 
 //object_utility
 @use "object/utility/txt-red";
 @use "object/utility/nowrap";
 @use "object/utility/open-menu";
+@use "object/utility/visually-hidden";

@@ -1,0 +1,127 @@
+@charset "UTF-8";
+@use "../../foundation/variables" as var;
+
+
+.p-cta-banner {
+    width: 100%;
+    min-width: 340px;
+    padding-top: 2px;
+    padding-bottom: 12px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 90;
+    @include var.breakpoint(tablet) {
+        display: none;
+    }
+
+    .heading {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        
+        img {
+            width: 32px;
+        }
+        p {
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 1.6rem;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+    }
+
+    .banner-wrap {
+        width: 97%;
+        max-width: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+
+        .freedial-banner {
+            width: 63%;
+            height: 68px;
+            background-color: var.$red;
+            border-radius: 4px;
+
+            .tel-link {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2px;
+
+                .freedial {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    img {
+                        width: 25px;
+                    }
+                    .tel {
+                        font-size: clamp(2.4rem, 6.8vw, 3rem);
+                        font-weight: 500;
+                        color: white;
+                        white-space: nowrap;
+                    }
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    color: white;
+                    white-space: nowrap;
+                    span {
+                        font-weight: 700;
+                        color: var.$yellow;
+                    }
+                }
+            }
+        }
+
+        .link-btn__group {
+            width: 34%;
+            display: flex;
+            justify-content: space-between;
+            gap: 4px;
+
+            .link-btn__contact,.link-btn__line {
+                width: 48.4%;
+                height: 76px;
+                border-radius: 4px;
+
+                .content {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 4px;
+
+                    .icon {
+                        width: 36px;
+                        min-width: 0;
+                        min-height: 0;
+                    }
+                    .title {
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        color: white;
+                        text-align: center;
+                        line-height: 1.2;
+                    }
+                }
+            }
+
+            .link-btn__contact {
+                background-color: var.$orange;
+            }
+            .link-btn__line {
+                background-color: var.$green;
+            }
+        }
+    }
+}

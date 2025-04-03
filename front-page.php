@@ -44,7 +44,7 @@
                     <img class="section-title__Illust" src="<?php echo esc_url(get_theme_file_uri('/images/character_05.png') ); ?>" alt="イメージキャラクター「エコわんくん」">
                     <hgroup class="title-group">
                         <p class="head">知って納得！</p>
-                        <p class="lead">エコレスキューが選ばれる</p>
+                        <p class="lead">エコワンが選ばれる</p>
                         <h2 class="heading">6つの理由</h2>
                     </hgroup>
                 </div>

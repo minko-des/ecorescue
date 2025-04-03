@@ -130,7 +130,7 @@
                         width: 56px;
                     }
                 }
-                .tel {
+                .tel-link .tel {
                     font-size: 3.2rem;
                     color: var.$red;
                     @include var.breakpoint(pc) {

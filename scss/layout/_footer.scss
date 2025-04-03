@@ -4,4 +4,8 @@
 
 .l-footer {
     width: 100%;
+    padding-bottom: 118px;
+    @include var.breakpoint(tablet) {
+        padding: 0;
+    }
 }

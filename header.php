@@ -17,13 +17,15 @@
             <header class="l-header">
                 <div class="p-header">
                     <div class="header-top">
-                        <?php get_template_part('template-parts/logo-title'); ?>
+                        <?php get_template_part('template-parts/site-title'); ?>
                         <div class="banner-group">
                             <div class="freedial-banner">
                                 <div class="freedial-area">
                                     <div class="freedial">
                                         <img src="<?php echo esc_url(get_theme_file_uri('/images/phone.png') ); ?>" alt="フリーダイヤル">
-                                        <p class="tel">080-7848-7520</p>
+                                        <a class="tel-link" href="tel:080-7848-7520">
+                                            <p class="tel">080-7848-7520</p>
+                                        </a>
                                     </div>
                                     <p>ご相談お見積り無料・24時間365日受付中</p>
                                 </div>
